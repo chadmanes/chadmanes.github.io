@@ -28,17 +28,36 @@ section { padding: 3rem 0; }
 h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 1.25rem; }
 #about p { max-width: 640px; font-size: 1.1rem; margin: 0; }
 
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.25rem; }
+.work { display: grid; gap: 1.25rem; }
 .card {
   display: block; background: var(--surface); border-radius: var(--radius);
-  overflow: hidden; color: var(--text); transition: transform .15s ease, box-shadow .15s ease;
+  overflow: hidden; color: var(--text);
 }
-.card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.35); text-decoration: none; }
-.thumb { aspect-ratio: 16 / 9; background: linear-gradient(135deg, #232733, #2c3140); }
+.work-card { width: min(100%, 760px); }
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.player video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(82vh, 860px);
+  aspect-ratio: 640 / 362;
+  object-fit: contain;
+  background: #000;
+}
 .card h3 { font-size: 1.05rem; margin: 1rem 1rem .25rem; }
-.card p { margin: 0 1rem 1.1rem; color: var(--muted); font-size: .95rem; }
-.card.placeholder { pointer-events: none; opacity: .75; }
-.card.placeholder .thumb { border-bottom: 1px dashed #3a4050; }
+.card .meta {
+  margin: 0 1rem .45rem;
+  color: var(--accent);
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+}
+.card p { margin: 0 1rem 1.15rem; color: var(--muted); font-size: .95rem; }
 
 footer { border-top: 1px solid #232733; padding: 3rem 0 4rem; }
 footer p { margin: .25rem 0; font-size: 1.1rem; }
