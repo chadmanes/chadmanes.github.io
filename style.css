@@ -66,6 +66,16 @@ h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: .14em; color:
   object-fit: contain;
   background: #000;
 }
+.audio {
+  background: #101218;
+  padding: .85rem 1rem .15rem;
+}
+.audio audio {
+  display: block;
+  width: 100%;
+  accent-color: var(--accent);
+  color-scheme: dark;
+}
 .card h3 { font-size: 1.05rem; margin: 1rem 1rem .25rem; }
 .card .meta {
   margin: 0 1rem .45rem;
