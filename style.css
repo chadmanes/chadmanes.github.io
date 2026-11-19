@@ -28,6 +28,7 @@ section { padding: 3rem 0; }
 h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 1.25rem; }
 .work { display: grid; gap: 1.25rem; }
 .work-group { margin-top: 2.25rem; }
+#work > .work-group:first-of-type { margin-top: 0; }
 .group-label {
   margin: 0 0 1rem;
   font-size: .85rem;
