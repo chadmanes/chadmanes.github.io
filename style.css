@@ -26,8 +26,6 @@ a:hover { text-decoration: underline; }
 
 section { padding: 3rem 0; }
 h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 1.25rem; }
-#about p { max-width: 640px; font-size: 1.1rem; margin: 0; }
-
 .work { display: grid; gap: 1.25rem; }
 .work-group { margin-top: 2.25rem; }
 .group-label {
